@@ -1,0 +1,21 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins_flopes
+    image: myjenkins/maven
+    ports:
+      - "8080:8080"
+    volumes:
+      - $PWD/jenkins_home:/var/jenkins_home
+    networks:
+      - net
+  sonarqube:
+    container_name: sonarqube_flopes
+    image: sonarqube:lts
+    ports:
+      - 9000:9000
+    networks:
+      - net
+networks:
+  net:
+
