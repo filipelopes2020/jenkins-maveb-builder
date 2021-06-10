@@ -14,8 +14,12 @@ services:
     image: sonarqube:lts
     ports:
       - 9000:9000
+    volumes:
+      - $PWD/sonarqube_home/conf:/opt/sonarqube/conf
+      - $PWD/sonarqube_home/data:/opt/sonarqube/data
+      - $PWD/sonarqube_home/logs:/opt/sonarqube/logs
+      - $PWD/sonarqube_home/extensions:/opt/sonarqube/extensions
     networks:
       - net
 networks:
   net:
-

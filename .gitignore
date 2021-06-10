@@ -3,6 +3,9 @@
 .jenkins_home/*
 ./jenkins_home/*
 /jenkins_home/*
+/sonarqube_home/*
+./sonarqube_home/*
+.sonarqube_home/*
 
 # Log file
 *.log
