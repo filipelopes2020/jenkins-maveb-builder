@@ -6,6 +6,6 @@ docker ps
 
 echo "comando para entrar nos containter:"  
 echo " "
-docker exec -it jenkins_flopes bash
-docker exec -it sonarqube_flopes bash
+echo "docker exec -it jenkins_flopes bash"
+echo "docker exec -it sonarqube_flopes bash"
 
