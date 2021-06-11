@@ -1,7 +1,7 @@
 docker-compose down
 #docker build -t myjenkins/maven .
-docker build -f Dockerfile_tomcat -t my/tomcat .
-docker build -f Dockerfile_jenkins_sonar -t myjenkins/maven .
+docker build -t my/tomcat Dockerfile_tomcat
+docker build -t myjenkins/maven Dockerfile_jenkins_sonar
 docker-compose up -d
 #docker exec -it jenkins_flopes bash 
 docker ps
