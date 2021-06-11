@@ -9,9 +9,9 @@
 ./sonarqube_home/*
 .sonarqube_home/*
 
-/sonarqube_home/*
-./sonarqube_home/*
-.sonarqube_home/*
+/tomcat_home/*
+./tomcat_home/*
+.tomcat_home/*
 
 
 # Log file
