@@ -21,5 +21,15 @@ services:
       - $PWD/sonarqube_home/extensions:/opt/sonarqube/extensions
     networks:
       - net
+  tomcat:
+    container_name: tomcat_flopes
+    image: my/tomcat
+    ports:
+      - "8081:8080"
+    volumes:
+      - $PWD/tomcat_home/webapps:/usr/local/tomcat/webapps
+#      - $PWD/tomcat_home/conf:/usr/local/tomcat/conf
+    networks:
+     - net  
 networks:
   net:
