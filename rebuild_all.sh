@@ -10,4 +10,4 @@ echo "comando para entrar nos containter:"
 echo " "
 echo "docker exec -it jenkins_flopes bash"
 echo "docker exec -it sonarqube_flopes bash"
-
+echo "docker exec -it tomcat_flopes bash"
